@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>QR Code Generator/Password Generator</title>
+    <link rel="stylesheet" href="QR.css">
+    <link rel="stylesheet" href="password.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>QR Code Generator</h1>
+        <p>Paste a url or enter text to create QR code</p>
+      </header>
+      <div class="form">
+        <input type="text" spellcheck="false" placeholder="Enter text or url">
+        <button>Generate QR Code</button>
+      </div>
+      <div class="qr-code">
+        <img src="" alt="qr-code">
+      </div>
+    </div>
+    <script src="QR.js"></script>
+    <div class="box">
+      <header>
+        <h2>Random password Generator</h2>
+      </header>
+      <input type="text" placeholder="Create Password" id="password" readonly>
+      <table>
+        <th><div id="button" class="btn1" onclick="genPassword()">Generate</div></th>
+        <th><div id="button" class="btn2" onclick="copyPassword()">Copy</div></th>
+      </table>
+    </div>
+    <script src="password.js"></script>
+  </body>
+</html>
